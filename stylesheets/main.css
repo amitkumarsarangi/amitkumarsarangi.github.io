@@ -1,0 +1,14 @@
+* {margin: 0; border: 0; padding: 0; outline: none;}
+body {
+	background-color: #ffffff;
+	font-size: 50px;
+}
+
+@media only screen and (min-width: 320px) {
+	.outermost-container {
+		margin: 0 auto;
+		width: 301px;
+		height: 701px;
+		border: 1px solid red;
+	}
+}/*min-width: 320px*/
