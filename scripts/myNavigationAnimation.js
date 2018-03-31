@@ -1,4 +1,5 @@
 var myNavigation = document.getElementById("myNavigation");
+	var myNavigationPanel = document.getElementById("myNavigationPanel");
 var myFooter = document.getElementById("myFooter");
 
 var dropSound = new Audio('assets/sounds/dropSound.wav');
@@ -7,17 +8,17 @@ var navPanelClickable = false;
 
 setTimeout(function() {
 	appearNavigationPanel();
-} , 2500);
+} , 2700);
 setTimeout(function() {
 	showNavigationPanel();
-} , 2810);
+} , 3010);
 setTimeout(function() {
 	closeNavigationPanel();
-} , 3320);
+} , 4200);
 
 setTimeout(function() {
 	navPanelClickable = true;
-} , 4000);
+} , 4700);
 
 myNavigation.onclick = function() {
 	if (navPanelClickable) {
@@ -83,6 +84,8 @@ function showNavigationPanel() {
 	dropSound.play();
 	setTimeout(function() {
 		myFooter.style.opacity = "0";
+		myNavigationPanel.style.transition = "all ease-in 0.5s";
+		myNavigationPanel.style.display = "block";
 		myNavigation.style.height = "20%";
 	} , 30);
 	setTimeout(function() {
@@ -108,6 +111,7 @@ function showNavigationPanel() {
 	} , 240);
 	setTimeout(function() {
 		myNavigation.style.height = "60%";
+		myNavigationPanel.style.opacity = "1";
 	} , 270);
 	setTimeout(function() {
 		myNavigation.style.width = "60%";
@@ -140,6 +144,8 @@ function closeNavigationPanel() {
 	setTimeout(function() {
 		myFooter.style.transition = "all linear 1.5s";
 		myFooter.style.opacity = "1";
+		myNavigationPanel.style.transition = "all ease-in 0.3s";
+		myNavigationPanel.style.opacity = "0";
 		myNavigation.style.height = "90%";
 	} , 30);
 	setTimeout(function() {
@@ -183,6 +189,7 @@ function closeNavigationPanel() {
 	} , 420);
 	setTimeout(function() {
 		myNavigation.style.height = "20%";
+		myNavigationPanel.style.display = "none";
 	} , 450);
 	setTimeout(function() {
 		myNavigation.style.width = "20%";

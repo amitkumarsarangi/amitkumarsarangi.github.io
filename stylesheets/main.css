@@ -1,6 +1,6 @@
 * {margin: 0; border: 0; padding: 0; outline: none;}
 body {
-	background-color: #fa6566;
+	background-color: #aaaaaa;
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -40,7 +40,6 @@ body {
 			width: 0%;
 			height: 0%;
 			background-color: #fa6566;
-			color: #ffffff;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -49,11 +48,34 @@ body {
 			-moz-user-select: none; /* Firefox 2+ */
 			-ms-user-select: none; /* IE 10+ */
 			user-select: none;
+			overflow: hidden;
 		}
+			.navigation-container nav {
+				margin: auto;
+				margin-top: 100px;
+				text-align: center;
+				display: none;
+				opacity: 0;
+			}
+			.navigation-container nav div {
+				color: #eeeeee;
+				cursor: pointer;
+			}
+				.navigation-container nav div:hover {
+					color: #ffffff;
+				}
+			.navigation-icon {
+				margin-bottom: 2px;
+				font-size: 4em;
+			}
+			.navigation-label {
+				margin-bottom: 25px;
+				font-size: 1.4em;
+				letter-spacing: 0.05em;
+			}
 		.content-container {
 			width: 100%;
 			height: 85%;
-			font-size: 1.9em;
 			line-height: 1.4;
 			overflow: auto;
 			position: absolute;
@@ -61,6 +83,20 @@ body {
 			left: 0%;
 			z-index: 98;
 		}
+			.content-container h1 {
+				margin-bottom: 10px;
+				font-size: 3em;
+				color: #fa6566;
+			}
+			.content-container p {
+				margin-bottom: 10px;
+				padding: 0 20px;
+				font-size: 1.5em;
+			}
+			.content-container p a {
+				text-decoration: none;
+				color: #fa6566;
+			}
 		.footer-container {
 			width: 100%;
 			height: 6%;
