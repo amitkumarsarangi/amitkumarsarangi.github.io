@@ -1,6 +1,6 @@
 * {margin: 0; border: 0; padding: 0; outline: none;}
 body {
-	background-color: #aaaaaa;
+	background-color: #cccccc;
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -58,19 +58,19 @@ body {
 				opacity: 0;
 			}
 			.navigation-container nav div {
-				color: #eeeeee;
+				color: #fafafa;
 				cursor: pointer;
 			}
 				.navigation-container nav div:hover {
-					color: #ffffff;
+					color: #751598;
 				}
 			.navigation-icon {
 				margin-bottom: 2px;
 				font-size: 4em;
 			}
 			.navigation-label {
-				margin-bottom: 25px;
-				font-size: 1.4em;
+				margin-bottom: 30px;
+				font-size: 1.25em;
 				letter-spacing: 0.05em;
 			}
 		.content-container {
@@ -89,13 +89,39 @@ body {
 				color: #fa6566;
 			}
 			.content-container p {
-				margin-bottom: 10px;
-				padding: 0 20px;
-				font-size: 1.5em;
+				padding: 10px;
+				font-size: 1.45em;
+				color: #751598;
 			}
 			.content-container p a {
 				text-decoration: none;
 				color: #fa6566;
+			}
+			.content-container p input, .content-container p textarea {
+				width: 100%;
+				border-bottom: 1px solid #751598;
+				background-color: transparent;
+				color: #fa6566;
+				font-size: 1em;
+				font-family: 'Montserrat', sans-serif;
+			}
+				.content-container p input::-webkit-input-placeholder, .content-container p textarea::-webkit-input-placeholder{
+					color: #aaaaaa;
+				}
+				.content-container p input::-moz-placeholder, .content-container p textarea::-moz-placeholder{
+					color: #aaaaaa;
+				}
+				.content-container p input::-ms-input-placeholder, .content-container p textarea::-ms-input-placeholder{
+					color: #aaaaaa;
+				}
+			.content-container p button {
+				padding: 10px 0;
+				width: 100%;
+				border-radius: 2px;
+				background-color: #fa6566;
+				color: #fafafa;
+				font-size: 1em;
+				font-family: 'Montserrat', sans-serif;
 			}
 		.footer-container {
 			width: 100%;
