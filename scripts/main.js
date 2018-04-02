@@ -25,6 +25,16 @@ var skillsContent = [
 
 var scribblesContent = [
 						'<h1>Scrawls n Scribbles</h1>'
+					,	'<p>It is often wise to keep scribbling. It keeps me updated and wanting to learn more. Below are all the small projects that I have created to keep myself busy.</p>'
+					,	'<h2>Some featured ones</h2>'
+					,	'<p>&#10085;</p>'
+					,	'<p>&#10085;</p>'
+					,	'<p>&#10085;</p>'
+					,	'<h2>And the rest of all</h2>'
+					,	'<p>&#10085;</p>'
+					,	'<p>&#10085;</p>'
+					,	'<p>&#10085;</p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Tribute-Page/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Tribute Page <sub>(HTML5 | CSS3) (freeCodeCamp)</sub></p>'
 ];
 
 var algorithmsContent = [
@@ -85,10 +95,12 @@ contactNav.onclick = function() {
 // script related to the footer section below this line...
 var myLinkedin = document.getElementById("myLinkedin");
 myLinkedin.onclick = function() {
+	dropSound.play();
 	location.href = "";
 }
 var myGithub = document.getElementById("myGithub");
 myGithub.onclick = function() {
+	dropSound.play();
 	location.href = "https://github.com/amitkumarsarangi";
 }
 // script related to the footer section abve this line...
