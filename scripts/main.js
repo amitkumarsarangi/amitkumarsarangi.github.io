@@ -21,6 +21,22 @@ var aboutMeContent = [
 
 var skillsContent = [
 						'<h1>Skills and Interests</h1>'
+					,	'<p>In addition to having a good understanding of web-related technologies, I am a quick learner with excellent analytical, written and verbal communication skills.</p>'
+					,	'<p>I am constantly learning new and newer technologies.</p>'
+					,	'<p>Have a look at my technology stack below. Want to build something useful? Let us get in touch.</p>'
+					,	'<p></p>'
+					,	'<p>'
+					,	'<img src="assets/logos/python.svg" title="Python" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/JS_Unofficial.svg" title="JavaScript" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/angular.svg" title="Angular" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/react.svg" title="React" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/D3.svg" title="D3" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/bootstrap.svg" title="Bootstrap" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/foundation.svg" title="Foundation" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/sass.svg" title="Sass" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/MySQL.svg" title="MySQL" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'<img src="assets/logos/MongoDB.svg" title="MongoDB" style=" margin: 0 25px 25px 0; height: 30px;">'
+					,	'</p>'
 ];
 
 var scribblesContent = [
@@ -52,7 +68,7 @@ var contactContent = [
 					,	'<p><textarea name="find_me" placeholder="How did you find me?" rows="1" cols="35"></textarea></p>'
 					,	'<p><input type="text" name="full_name" placeholder="What is your name?" size="40" required></p>'
 					,	'<p><input type="email" name="email_id" placeholder="What is your email id?" size="40" required></p>'
-					,	'<p><input type="url" name="website" placeholder="Do you have a website?" size="40"></p>'
+					,	'<p><input type="url" name="website" placeholder="Where can I visit your webpage?" size="40"></p>'
 					,	'<p><textarea name="message_subject" placeholder="Subject." rows="1" cols="35"></textarea></p>'
 					,	'<p><textarea name="message_body" placeholder="Your message." rows="4" cols="35"></textarea></p>'
 					,	'<p><button type="submit">Submit</button></p>'
