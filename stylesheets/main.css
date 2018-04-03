@@ -17,24 +17,32 @@ body {
 	left: 0;
 	z-index: 101;
 }
-	#projectDisplayScreen{
+	#projectDisplayScreen {
 		width: 100%;
 		height: 100%;
 	}
-	#projectDisplayCloseButton{
+		#projectDisplayScreen iframe {
+			width: 100%;
+			height: 100%;
+		}
+	#projectDisplayCloseButton {
 		font-size: 30px;
 		color: #fa6566;
 		position: absolute;
 		top: 0;
 		right: 1px;
+		cursor: pointer;
 	}
-	#projectOpenNewTab{
+	#projectOpenNewTab {
 		font-size: 30px;
 		color: #fa6566;
 		position: absolute;
 		bottom: 0;
 		left: 1px;
 	}
+		#projectOpenNewTab a {
+			color: #fa6566;
+		}
 
 @media only screen and (min-width: 320px) {
 	.outermost-container {

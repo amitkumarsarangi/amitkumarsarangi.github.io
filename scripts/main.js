@@ -43,13 +43,15 @@ var scribblesContent = [
 						'<h1>Scrawls n Scribbles</h1>'
 					,	'<p>It is often wise to keep scribbling. It keeps me updated and wanting to learn more. Below are all the small projects that I have created to keep myself busy.</p>'
 					,	'<h2>Some featured ones</h2>'
-					,	'<p>&#10085;</p>'
-					,	'<p>&#10085;</p>'
-					,	'<p>&#10085;</p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Two-Player-Tic-Tac-Toe/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Two Player Tic Tac Toe <sub>(JavaScript | Bootstrap)</sub></p>'
 					,	'<h2>And the rest of all</h2>'
-					,	'<p>&#10085;</p>'
-					,	'<p>&#10085;</p>'
-					,	'<p>&#10085;</p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Night-Vision/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Night Vision <sub>(CSS3)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Simon-Game/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Simon Game <sub>(JavaScript | CSS3) (freeCodeCamp)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Pomodoro-Clock/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Pomodoro Clock <sub>(JavaScript | CSS3) (freeCodeCamp)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Double-Helix/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Double Helix <sub>(CSS3)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Random-Quote-Machine/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Random Quote Machine <sub>(JavaScript | CSS3) (freeCodeCamp)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Quick-Reaction-Required/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Quick Reaction Required <sub>(JavaScript | CSS3)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Survey-Form/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Survey Form <sub>(CSS3 | HTML5) (freeCodeCamp)</sub></p>'
 					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Tribute-Page/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Tribute Page <sub>(HTML5 | CSS3) (freeCodeCamp)</sub></p>'
 ];
 
@@ -59,6 +61,8 @@ var algorithmsContent = [
 
 var postsContent = [
 						'<h1>Recent Posts</h1>'
+					,	'<p id="https://medium.com/@sarangiamitkumar/tried-and-tested-searching-strategies-for-google-search-engine-f87e2e357c45" style="cursor:pointer" onclick="openPosts(this.id)">&raquo; Tried and Tested Searching Strategies for Google Search Engine</p>'
+					,	'<p id="https://medium.com/@sarangiamitkumar/y-learn-to-code-ce0f222ee3c4" style="cursor:pointer" onclick="openPosts(this.id)">&raquo; Y Learn to CODE</p>'
 ];
 
 var contactContent = [
