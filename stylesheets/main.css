@@ -110,7 +110,7 @@ body {
 			}
 		.content-container {
 			width: 100%;
-			height: 85%;
+			height: 86%;
 			line-height: 1.4;
 			overflow: auto;
 			position: absolute;
@@ -165,9 +165,9 @@ body {
 			}
 		.footer-container {
 			width: 100%;
-			height: 6%;
+			height: 5%;
 			color: #fa6566;
-			font-size: 3.5em;
+			font-size: 2.9em;
 			text-align: center;
 			opacity: 0;
 			position: absolute;

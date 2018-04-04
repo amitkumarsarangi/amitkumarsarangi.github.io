@@ -44,6 +44,8 @@ var scribblesContent = [
 					,	'<p>It is often wise to keep scribbling. It keeps me updated and wanting to learn more. Below are all the small projects that I have created to keep myself busy.</p>'
 					,	'<h2>Some featured ones</h2>'
 					,	'<p id="https://amitkumarsarangi.github.io/Two-Player-Tic-Tac-Toe/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Two Player Tic Tac Toe <sub>(JavaScript | Bootstrap)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/A-Countdown-Timer/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; A Countdown Timer <sub>(JavaScript | Bootstrap | CSS3)</sub></p>'
+					,	'<p id="https://amitkumarsarangi.github.io/A-Stopwatch-Timer/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; A Stopwatch Timer <sub>(JavaScript | Bootstrap | CSS3)</sub></p>'
 					,	'<h2>And the rest of all</h2>'
 					,	'<p id="https://amitkumarsarangi.github.io/Night-Vision/" style="cursor:pointer" onclick="displayProject(this.id)">&#10085; Night Vision <sub>(CSS3)</sub></p>'
 					,	'<p id="https://amitkumarsarangi.github.io/Build-A-Simon-Game/" style="color:#006400;cursor:pointer" onclick="displayProject(this.id)">&#10085; Build A Simon Game <sub>(JavaScript | CSS3) (freeCodeCamp)</sub></p>'
@@ -68,6 +70,7 @@ var postsContent = [
 var contactContent = [
 						'<h1>Get In Touch</h1>'
 					,	'<p>Please use this contact form to send me a message. If not heavily engaged, I usually get in touch very quickly.</p>'
+					,	'<p></p>'
 					,	'<form method="POST" action="https://formspree.io/amitsarangi44@gmail.com">'
 					,	'<p><textarea name="find_me" placeholder="How did you find me?" rows="1" cols="35"></textarea></p>'
 					,	'<p><input type="text" name="full_name" placeholder="What is your name?" size="40" required></p>'
@@ -75,6 +78,7 @@ var contactContent = [
 					,	'<p><input type="url" name="website" placeholder="Where can I visit your webpage?" size="40"></p>'
 					,	'<p><textarea name="message_subject" placeholder="Subject." rows="1" cols="35"></textarea></p>'
 					,	'<p><textarea name="message_body" placeholder="Your message." rows="4" cols="35"></textarea></p>'
+					,	'<p></p>'
 					,	'<p><button type="submit">Submit</button></p>'
 					,	'</form>'
 ];
@@ -122,6 +126,11 @@ var myGithub = document.getElementById("myGithub");
 myGithub.onclick = function() {
 	dropSound.play();
 	location.href = "https://github.com/amitkumarsarangi";
+}
+var myResume = document.getElementById("myResume");
+myResume.onclick = function() {
+	dropSound.play();
+	// location.href = "resume/index.html";
 }
 // script related to the footer section abve this line...
 
