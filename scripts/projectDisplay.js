@@ -3,18 +3,22 @@ var projectDisplay = document.getElementById("projectDisplay");
 	var projectDisplayCloseButton = document.getElementById("projectDisplayCloseButton");
 	var projectOpenNewTab = document.getElementById("projectOpenNewTab");
 
+var tabLink = '';
+
 projectDisplayCloseButton.onclick = function() {
 	removeProject();
 }
 
 projectOpenNewTab.onclick = function() {
 	removeProject();
+	window.open(tabLink, '_blank');
+	tabLink = '';
 }
 
 function displayProject(link) {
 	projectDisplayScreen.innerHTML = "<iframe src='" + link + "'></iframe>";
-	projectOpenNewTab.innerHTML = '<a href="' + link + '" target="_blank"><i class="fas fa-external-link-alt"></i></a>';
 	projectDisplay.style.display = 'block';
+	tabLink = link;
 	dropSound.play();
 }
 

@@ -19,7 +19,9 @@
 	<!-- fontawesome fonts -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
+	<!-- custom css below -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/projectDisplay.css">
 </head>
 <body>
 	<div class="outermost-container" id="outermostContainer">
@@ -65,10 +67,12 @@
 	</div><!-- outermost-container -->
 
 	<div id="getHeightDiv"></div>
-	<div id='projectDisplay'>
-		<div id='projectDisplayScreen'></div>
-		<div id='projectDisplayCloseButton' title="close"><i class="far fa-window-close"></i></div>
-		<div id='projectOpenNewTab' title="go to the page"><i class="fas fa-external-link-alt"></i></div>
+	<div id="projectDisplay">
+		<section id="projectDisplayScreen"></section>
+		<div class="display-buttons">
+			<button id="projectDisplayCloseButton" title="close"><i class="icon ion-close-circled"></i></button>
+			<button id="projectOpenNewTab" title="open in new tab"><i class="icon ion-android-open"></i></button>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="scripts/main.js"></script>
