@@ -1,4 +1,4 @@
-var myImage = document.getElementById("myImage");
+var myImage = document.getElementsByClassName("amit-image-container")[0];
 
 var popSound = new Audio('assets/sounds/popSound.wav');
 var morse = new Audio('assets/sounds/morse.wav');

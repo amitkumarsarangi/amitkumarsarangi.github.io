@@ -27,8 +27,3 @@ function removeProject() {
 	projectDisplay.style.display = 'none';
 	dropSound.play();
 }
-
-// below function is for opening recent posts in a new tab...
-function openPosts(link) {
-	window.open(link, '_blank');
-}
