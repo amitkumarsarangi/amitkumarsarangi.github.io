@@ -25,8 +25,6 @@ navigationContainer.onclick = function() {
 function appearNavPanel() {
 	setTimeout(function() {
 		navigationContainer.style.display = "block";
-		navigationContainer.style.opacity = "0.1";
-		navigationContainer.style.borderRadius = "50%";
 	} , 3000);
 	setTimeout(function() {
 		navigationContainer.style.right = "0";
@@ -110,10 +108,10 @@ function closeNavPanel() {
 		for(var i=0; i<eachSection.length; i++) {
 			eachSection[i].style.display = "none";
 		}
-		navigationContainer.style.height = "8%";
+		navigationContainer.style.height = "58px";
 	} , 400);
 	setTimeout(function() {
-		navigationContainer.style.width = "19%";
+		navigationContainer.style.width = "58px";
 		for(var i=0; i<eachSection.length; i++) {
 			eachSection[i].style.bottom = "0";
 		}

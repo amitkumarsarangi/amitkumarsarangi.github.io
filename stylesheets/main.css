@@ -43,13 +43,14 @@ body {
 			border-radius: 50%;
 		}
 	.navigation-container {
-		width: 19%;
-		height: 8%;
+		width: 58px;
+		height: 58px;
 		background-color: #fa6566;
 		overflow: hidden;
+		border-radius: 50%;
 		position: absolute;
 		top: 0;
-		right: 81%;
+		right: 84%;
 		z-index: 100;
 		opacity: 0;
 		display: none;

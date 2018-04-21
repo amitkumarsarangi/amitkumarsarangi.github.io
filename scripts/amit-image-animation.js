@@ -25,6 +25,9 @@ setTimeout(function() {
 	myImage.style.opacity = '0.3';
 	myImage.style.width = '41px';
 	myImage.style.top = '4%';
+} , 2300);
+setTimeout(function() {
+	myImage.style.transition = 'all linear 0.2s';
 	myImage.style.left = '9%';
 } , 2500);
 

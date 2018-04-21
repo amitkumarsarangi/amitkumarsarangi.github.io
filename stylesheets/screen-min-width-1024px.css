@@ -1,35 +1,35 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 1024px) {
 	.main-container {
-		width: 301px;
+		width: 1000px;
 	}
 		.content-container {
 			line-height: 1.4;
 		}
 			.content-container h1 {
-				margin-left: 5px;
-				font-size: 1.5em;
+				margin-left: 25px;
+				font-size: 1.7em;
 				text-shadow: 0 0 1px #fa6566;
 			}
 			.content-container h2 {
-				margin-left: 5px;
-				padding-top: 10px;
-				font-size: 1.1em;
+				margin-left: 25px;
+				padding-top: 20px;
+				font-size: 1.2em;
 				text-shadow: 0 0 1px #fa6566;
 			}
 			.content-container p {
-				padding-top: 10px;
-				margin-left: 5px;
-				font-size: 0.7em;
+				padding-top: 15px;
+				margin-left: 55px;
+				font-size: 0.9em;
 			}
 				.content-container p img {
-					margin: 0 20px 20px 0;
-					height: 25px;
+					margin: 0 30px 30px 0;
+					height: 35px;
 				}
 				.content-container p input, .content-container p textarea {
 					margin-top: 10px;
-					font-size: 0.7em;
+					font-size: 0.9em;
 				}
 				.content-container p button {
-					font-size: 0.7em;
+					font-size: 0.9em;
 				}
 }
