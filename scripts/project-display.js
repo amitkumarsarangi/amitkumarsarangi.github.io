@@ -7,16 +7,28 @@ var projectDisplay = document.getElementById("projectDisplay");
 
 var tabLink = '';
 
+var histLen = 0;
+var backCounter = 0;
+var forwardCounter = 0;
+
 projectDisplayCloseButton.onclick = function() {
 	removeProject();
 }
 
 projectDisplayBackButton.onclick = function() {
-	projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.back();
+	if ((histLen < projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.length) && (backCounter < (histLen - projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.length))) {
+		projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.back();
+		backCounter += 1;
+		forwardCounter -= 1;
+	}
 }
 
 projectDisplayForwardButton.onclick = function() {
-	projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.forward();
+	if ((histLen < projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.length) && (forwardCounter < (histLen - projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.length))) {
+		projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.forward();
+		forwardCounter += 1;
+		backCounter -= 1;
+	}
 }
 
 projectOpenNewTab.onclick = function() {
@@ -29,6 +41,7 @@ function displayProject(link) {
 	projectDisplayScreen.innerHTML = "<iframe src='" + link + "'></iframe>";
 	projectDisplay.style.display = 'block';
 	tabLink = link;
+	histLen = projectDisplayScreen.getElementsByTagName("iframe")[0].contentWindow.history.length;
 	dropSound.play();
 }
 
