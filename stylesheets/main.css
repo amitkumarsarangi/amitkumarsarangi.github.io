@@ -186,7 +186,7 @@ body {
 			height: 100%;
 		}
 	.display-buttons {
-		padding: 0 10px;
+		padding: 0 5px;
 		background-color: #cccccc;
 		border-radius: 20px;
 		position: absolute;
@@ -196,6 +196,10 @@ body {
     	animation-duration: 10s;
     	animation-delay: 5s;
     	animation-iteration-count: infinite;
+    	-webkit-user-select: none; /* Chrome, Opera, Safari */
+		-moz-user-select: none; /* Firefox 2+ */
+		-ms-user-select: none; /* IE 10+ */
+		user-select: none;
 	}
 		@keyframes indicator {
 			0% {background-color: #cccccc;}
