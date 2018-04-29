@@ -1,0 +1,245 @@
+@media only screen and (min-width: 320px) {
+	.outermost-container {
+		width: 100vw;
+		height: 100vh;
+		background-color: rgb(249, 249, 249);
+	}
+		.main-container {
+			margin: auto;
+			width: 320px;
+			height: 100%;
+			position: relative;
+		}
+			.content-container {
+				width: 100%;
+				overflow: auto;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+				.content-section {
+					margin-bottom: 100px;
+					line-height: 1.4;
+				}
+					.content-section section h1 {
+						margin-bottom: 15px;
+						font-size: 50px;
+						color: rgb(124, 51, 51);
+						text-shadow: 0 0 1px rgba(124, 51, 51, 1);
+						font-family: 'Cute Font', cursive;
+					}
+					.content-section section h2 {
+						margin-bottom: 10px;
+						font-size: 30px;
+						color: rgb(124, 51, 51);
+						text-shadow: 0 0 1px rgba(124, 51, 51, 1);
+						font-family: 'Cute Font', cursive;
+					}
+					.content-section section p {
+						margin-bottom: 7px;
+						font-size: 15px;
+						color: rgb(153, 48, 48);
+						font-family: 'Play', sans-serif;
+						text-align: justify;
+					}
+					.content-section section p.project {
+						cursor: pointer;
+					}
+						.content-section section p.project:hover {
+							color: rgb(42, 46, 142);
+						}
+						.content-section section p img {
+							margin: 12px;
+							height: 25px
+						}
+						.content-section section p span.linker, .content-section section p a {
+							color: rgb(42, 46, 142);
+							cursor: pointer;
+						}
+					.content-section section form {
+						margin-top: 20px;
+						width: 100%;
+					}
+						.content-section section form textarea, .content-section section form input, .content-section section form button {
+							margin-top: 10px;
+							padding: 5px 0;
+							width: 100%;
+							color: rgb(153, 48, 48);
+							font-size: 15px;
+							font-family: 'Play', sans-serif;
+							background-color: transparent;
+							border-bottom: 1px dotted rgba(153, 48, 48, 0.1);
+						}
+							.content-section section form textarea::-webkit-input-placeholder, .content-section section form input::-webkit-input-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+							.content-section section form textarea::-moz-placeholder, .content-section section form input::-moz-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+							.content-section section form textarea::-ms-input-placeholder, .content-section section form input::-ms-input-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+						.content-section section form button {
+							padding: 10px 0;
+							border-radius: 2px;
+							border: 1px dotted rgba(153, 48, 48, 0.5);
+							cursor: pointer;
+							-webkit-transition: all ease 0.3s;
+							-o-transition: all ease 0.3s;
+							transition: all ease 0.3s;
+						}
+							.content-section section form button:hover {
+								color: rgb(249, 249, 249);
+								background-color: rgba(153, 48, 48, 0.5);
+								border: 1px solid rgba(153, 48, 48, 0.5);
+							}
+			.header-container {
+				width: 100%;
+				height: 90px;
+				background-color: rgba(249, 249, 249, 0.9);
+				background-color: rgba(0,255,0,0.7);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all linear 0.5s;
+			}
+				.navigation-panel {
+					width: 100%;
+					height: 40px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+				}
+					.navigation-section {
+						width: 15%;
+						color: rgb(250, 101, 102);
+						text-shadow: 0 0 1px rgb(250, 101, 102);
+						display: inline-block;
+						position: relative;
+					}
+						.navigation-label {
+							font-size: 10px;
+							text-transform: uppercase;
+							font-family: 'Cute Font', cursive;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							display: none;
+						}
+						.navigation-icon {
+							font-size: 37px;
+							text-shadow: 0 0 1px rgb(250, 101, 102);
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							transition: all linear 0.1s;
+						}
+							.navigation-icon:hover {
+								transform: translate(-60%, -60%);
+								text-shadow: 0 0 1px rgb(250, 101, 102), 5px 7px 3px rgba(0, 0, 0, 0.2);
+							}
+				.navigation-toggler {
+					color: rgb(250, 101, 102);
+					font-size: 37px;
+					text-shadow: 2px -2px 2px rgb(250, 101, 102);
+					cursor: pointer;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+					.navigation-toggler:hover {
+						text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 2px -2px 2px rgb(250, 101, 102);
+					}
+			.footer-container {
+				width: 100%;
+				height: 30px;
+				background-color: rgba(249, 249, 249, 0.7);
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+				.footer-icon {
+					margin-left: 7px;
+					color: rgb(250, 101, 102);
+					font-size: 25px;
+					text-shadow: 0 0 1px rgb(250, 101, 102);
+					float: right;
+				}
+	.project-container {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		display: none;
+		-webkit-transition: all linear 0.9s;
+		-o-transition: all linear 0.9s;
+		transition: all linear 0.9s;
+	}
+		.project-container iframe {
+			width: 100%;
+			height: 100%;
+		}
+		.project-container-controls {
+			background-color: rgb(250, 101, 102);
+			box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+			position: absolute;
+			top: 0;
+			right: 0;
+			animation-name: indicator-one;
+			animation-duration: 10s;
+			animation-delay: 5s;
+			animation-iteration-count: infinite;
+			-webkit-user-select: none; /* Chrome, Opera, Safari */
+			-moz-user-select: none; /* Firefox 2+ */
+			-ms-user-select: none; /* IE 10+ */
+			user-select: none;
+		}
+			@keyframes indicator-one {
+				0% {
+					background-color: rgb(250, 101, 102);
+					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+				}
+				5% {
+					background-color: rgb(124, 51, 51);
+					box-shadow: -1px 1px 5px 1px rgb(124, 51, 51), -2px 2px 5px 1px rgb(189, 193, 201);
+				}
+				10% {
+					background-color: rgb(250, 101, 102);
+					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+				}
+				100% {
+					background-color: rgb(250, 101, 102);
+					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+				}
+			}
+			.project-container-controls div {
+				margin: 5px;
+				font-size: 25px;
+				color: rgb(249, 249, 249);
+				text-shadow: 0 0 1px rgb(249, 249, 249);
+				cursor: pointer;
+				animation-name: indicator-two;
+				animation-duration: 10s;
+				animation-delay: 5s;
+				animation-iteration-count: infinite;
+			}
+				@keyframes indicator-two {
+					0% {
+						margin: 5px;
+					}
+					5% {
+						margin: 5px 15px 5px 5px;
+					}
+					10% {
+						margin: 5px;
+					}
+					100% {
+						margin: 5px;
+					}
+				}
+}

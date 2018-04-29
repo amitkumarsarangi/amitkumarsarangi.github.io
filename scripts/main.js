@@ -1,11 +1,22 @@
-var topMargin = Math.round((document.getElementsByClassName("height-container")[0].clientHeight - document.getElementsByClassName("main-container")[0].clientHeight) / 2);
-if (topMargin > 0) {
-	document.getElementsByClassName("main-container")[0].style.marginTop = topMargin + "px";
+var dropSound = new Audio('assets/sounds/dropSound.wav');
+var popSound = new Audio('assets/sounds/popSound.wav');
+
+function openLink(link) {
+	dropSound.play();
+	location.href = link;
+	document.getElementsByClassName("content-container")[0].scrollBy(0, -90);
 }
 
-var dropSound = new Audio('assets/sounds/dropSound.wav');
-
-function openLinks(link) {
-	dropSound.play();
+function openLinkNewTab(link) {
+	popSound.play();
 	window.open(link, '_blank');
+}
+
+function getContent(arr) {
+	dropSound.play();
+	var content = "";
+	for (var i=0; i<arr.length; i++) {
+		content += arr[i];
+	}
+	return content;
 }
