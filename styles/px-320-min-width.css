@@ -98,11 +98,10 @@
 				width: 100%;
 				height: 90px;
 				background-color: rgba(249, 249, 249, 0.9);
-				background-color: rgba(0,255,0,0.7);
 				position: absolute;
 				top: 0;
 				left: 0;
-				transition: all linear 0.5s;
+				transition: all ease-in 1.1s;
 			}
 				.navigation-panel {
 					width: 100%;
@@ -110,16 +109,35 @@
 					position: absolute;
 					left: 0;
 					bottom: 0;
+					transition: all ease 0.7s;
+				}
+				.navigation-panel-t {
+					height: auto;
+					overflow: auto;
+					top: 90px;
 				}
 					.navigation-section {
 						width: 15%;
-						color: rgb(250, 101, 102);
-						text-shadow: 0 0 1px rgb(250, 101, 102);
 						display: inline-block;
 						position: relative;
+						transition: all ease 0.1s;
 					}
+					.navigation-section-t {
+						margin: 30px 0 60px 0;
+						width: 100%;
+						cursor: pointer;
+					}
+						.navigation-section:hover .navigation-icon {
+							transform: translate(-60%, -60%);
+							text-shadow: 0 0 1px rgb(250, 101, 102), 5px 7px 3px rgba(0, 0, 0, 0.2);
+						}
+						.navigation-section-t:hover .navigation-icon-t {
+							transform: translate(-50%, -60%);
+						}
 						.navigation-label {
 							font-size: 10px;
+							color: rgb(250, 101, 102);
+							text-shadow: 0 0 1px rgb(250, 101, 102);
 							text-transform: uppercase;
 							font-family: 'Cute Font', cursive;
 							position: absolute;
@@ -127,9 +145,16 @@
 							left: 50%;
 							transform: translate(-50%, -50%);
 							display: none;
+							transition: all ease 0.2s;
+						}
+						.navigation-label-t {
+							font-size: 25px;
+							transform: translate(-50%, 10%);
+							display: block;
 						}
 						.navigation-icon {
 							font-size: 37px;
+							color: rgb(250, 101, 102);
 							text-shadow: 0 0 1px rgb(250, 101, 102);
 							position: absolute;
 							top: 50%;
@@ -137,10 +162,9 @@
 							transform: translate(-50%, -50%);
 							transition: all linear 0.1s;
 						}
-							.navigation-icon:hover {
-								transform: translate(-60%, -60%);
-								text-shadow: 0 0 1px rgb(250, 101, 102), 5px 7px 3px rgba(0, 0, 0, 0.2);
-							}
+						.navigation-icon-t {
+							font-size: 44px;
+						}
 				.navigation-toggler {
 					color: rgb(250, 101, 102);
 					font-size: 37px;
