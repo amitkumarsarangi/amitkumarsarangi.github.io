@@ -41,7 +41,7 @@
 						<h1>Skills and Interests</h1>
 						<p>In addition to having a good understanding of web-related technologies, he is a quick learner with excellent analytical, written and verbal communication skills.</p>
 						<p>He is constantly learning new and newer technologies.</p>
-						<p>Have a look at his technology stack below. Want to build something useful? <span class="linker" id="#contactSection" onclick="openLink(this.id)">Get in touch</span> with him.</p>
+						<p>Have a look at his technology stack below. Want to build something useful? <span class="linker" id="#contactSection" onclick="getContent(contactArray)">Get in touch</span> with him.</p>
 						<p>
 							<img src="assets/logos/python.svg" title="Python">
 							<img src="assets/logos/JS_Unofficial.svg" title="JavaScript">
@@ -98,17 +98,20 @@
 				<div class="content-section" id="algorithmSection">
 					<section>
 						<h1>Algorithms</h1>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)">&raquo; freeCodeCamp Basic Algorithm Scripting Solutions: Check for Palindromes</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)">&raquo; freeCodeCamp Basic Algorithm Scripting Solutions: Factorialize a Number</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)">&raquo; freeCodeCamp Basic Algorithm Scripting Solutions: Reverse a String</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-return-largest-numbers-in-arrays-39cf40e69858" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Return Largest Numbers in Arrays</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-title-case-a-sentence-d5f6877ce78c" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Title Case a Sentence</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-find-the-longest-word-in-a-string-b431580464e6" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Find the Longest Word in a String</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Check for Palindromes</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Factorialize a Number</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Reverse a String</p>
 					</section>
 				</div>
 				<div class="content-section" id="postsSection">
 					<section>
 						<h1>Recent Posts</h1>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/a-review-of-a-course-by-the-stanford-life-design-lab-1cb610a5de49" onclick="openLinkNewTab(this.id)">&raquo; A Review of a course by the Stanford Life Design Lab</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/tried-and-tested-searching-strategies-for-google-search-engine-f87e2e357c45" onclick="openLinkNewTab(this.id)">&raquo; Tried and Tested Searching Strategies for Google Search Engine</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/y-learn-to-code-ce0f222ee3c4" onclick="openLinkNewTab(this.id)">&raquo; Y Learn to CODE</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/a-review-of-a-course-by-the-stanford-life-design-lab-1cb610a5de49" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> A Review of a course by the Stanford Life Design Lab</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/tried-and-tested-searching-strategies-for-google-search-engine-f87e2e357c45" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> Tried and Tested Searching Strategies for Google Search Engine</p>
+						<p class="project" id="https://medium.com/@sarangiamitkumar/y-learn-to-code-ce0f222ee3c4" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> Y Learn to CODE</p>
 					</section>
 				</div>
 				<div class="content-section" id="contactSection">
@@ -155,7 +158,7 @@
 						<div class="navigation-icon"><i class="icon ion-email"></i></div>
 					</div>
 				</nav>
-				<div class="navigation-toggler"><i class="icon ion-drag"></i></div>
+				<div class="navigation-toggler"><div><i class="icon ion-drag"></i></div></div>
 			</header> <!-- header-container -->
 
 			<footer class="footer-container">
@@ -170,6 +173,10 @@
 				</span>
 				<span class="footer-icon">|</span>
 			</footer> <!-- footer-container -->
+			<div class="floating-container">
+				<main></main>
+				<div></div>
+			</div>
 		</div> <!-- main-container -->
 	</div> <!-- outermost-container -->
 
@@ -184,5 +191,6 @@
 	<script type="text/javascript" src="scripts/main.js"></script>
 	<script type="text/javascript" src="scripts/navigation.js"></script>
 	<script type="text/javascript" src="scripts/project-display.js"></script>
+	<script type="text/javascript" src="scripts/content.js"></script>
 </body>
 </html>

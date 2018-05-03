@@ -192,6 +192,78 @@
 					text-shadow: 0 0 1px rgb(250, 101, 102);
 					float: right;
 				}
+			.floating-container {
+				width: 85%;
+				height: 55%;
+				background-color: rgb(249, 249, 249);
+				box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), -3px 7px 7px rgba(0, 0, 0, 0.3), -5px 9px 9px rgba(0, 0, 0, 0.7);
+				border-radius: 2px;
+				position: absolute;
+				top: 90px;
+				right: 10px;
+				display: none;
+				opacity: 0;
+				-webkit-transition: all linear 0.5s;
+				-o-transition: all linear 0.5s;
+				transition: all linear 0.5s;
+			}
+				.floating-container main {
+					width: 90%;
+					position: absolute;
+					top: 25px;
+					bottom: 0;
+					right: 5%;
+					overflow: auto;
+				}
+					.floating-container main form {
+						margin-top: 10px;
+						width: 100%;
+					}
+						.floating-container main form textarea, .floating-container main form input, .floating-container main form button {
+							margin-top: 10px;
+							padding: 5px 0;
+							width: 100%;
+							color: rgb(153, 48, 48);
+							font-size: 12px;
+							font-family: 'Play', sans-serif;
+							background-color: transparent;
+							border-bottom: 1px dotted rgba(153, 48, 48, 0.1);
+						}
+							.floating-container main form textarea::-webkit-input-placeholder, .floating-container main form input::-webkit-input-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+							.floating-container main form textarea::-moz-placeholder, .floating-container main form input::-moz-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+							.floating-container main form textarea::-ms-input-placeholder, .floating-container main form input::-ms-input-placeholder {
+								color: rgba(153, 48, 48, 0.5);
+							}
+						.floating-container main form button {
+							margin-bottom: 10px;
+							padding: 10px 0;
+							border-radius: 2px;
+							border: 1px dotted rgba(153, 48, 48, 0.5);
+							cursor: pointer;
+							-webkit-transition: all ease 0.2s;
+							-o-transition: all ease 0.2s;
+							transition: all ease 0.2s;
+						}
+							.floating-container main form button:hover {
+								color: rgb(249, 249, 249);
+								background-color: rgba(153, 48, 48, 0.5);
+								border: 1px solid rgba(153, 48, 48, 0.5);
+							}
+				.floating-container div {
+					width: 11px;
+					height: 11px;
+					background-color: rgba(255, 0, 0, 1);
+					box-shadow: 0 0 3px rgba(255, 0, 0, 1);
+					border-radius: 50%;
+					position: absolute;
+					top: 9px;
+					right: 9px;
+					cursor: pointer;
+				}
 	.project-container {
 		width: 100vw;
 		height: 100vh;

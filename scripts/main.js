@@ -11,12 +11,3 @@ function openLinkNewTab(link) {
 	popSound.play();
 	window.open(link, '_blank');
 }
-
-function getContent(arr) {
-	dropSound.play();
-	var content = "";
-	for (var i=0; i<arr.length; i++) {
-		content += arr[i];
-	}
-	return content;
-}
