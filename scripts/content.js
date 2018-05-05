@@ -19,6 +19,27 @@ var contactArray = [
 ,	'</form>'
 ];
 
+var skillsArray = [
+'<p>'
+,'<img src="assets/logos/html.svg" title="HTML5">'
+,'<img src="assets/logos/css.svg" title="CSS3">'
+,'<img src="assets/logos/python.svg" title="Python">'
+,'<img src="assets/logos/JS_Unofficial.svg" title="JavaScript">'
+,'<img src="assets/logos/angular.svg" title="Angular">'
+,'<img src="assets/logos/react.svg" title="React">'
+,'<img src="assets/logos/D3.svg" title="D3">'
+,'<img src="assets/logos/bootstrap.svg" title="Bootstrap">'
+,'<img src="assets/logos/foundation.svg" title="Foundation">'
+,'<img src="assets/logos/joomla.svg" title="Joomla">'
+,'<img src="assets/logos/wordpress.svg" title="Wordpress">'
+,'<img src="assets/logos/jQuery.svg" title="jQuery">'
+,'<img src="assets/logos/sass.svg" title="Sass">'
+,'<img src="assets/logos/node.svg" title="Node">'
+,'<img src="assets/logos/MySQL.svg" title="MySQL">'
+,'<img src="assets/logos/MongoDB.svg" title="MongoDB">'
+,'</p>'
+]
+
 function getContent(arr) {
 	var content = "";
 	for (var i=0; i<arr.length; i++) {
