@@ -22,7 +22,7 @@ html, body {
 @media only screen and (max-width: 320px) {}
 
 @media only screen and (min-width: 320px) {
-	.main-section {
+	.main-section, .footer-section {
 		margin: 3.5em auto;
 		max-width: 300px;
 		padding: 1em 10px;
@@ -100,6 +100,28 @@ html, body {
 				.section-form button:hover {
 					box-shadow: 0 0 10px rgb(2, 20, 51);
 				}
+	.footer-section {
+		margin-bottom: 0;
+		height: 5em;
+		border-top: 1px solid rgb(250, 101, 102);
+		border-bottom: 5px solid rgb(250, 101, 102);
+		position: relative;
+	}
+		.icon-section {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+			.footer-icon {
+				margin-left: 0.25em;
+				font-size: 3.45em;
+				color: rgb(250, 101, 102);
+				float: right;
+				cursor: pointer;
+			}
+			.footer-icon:last-child {
+				cursor: none;
+			}
 	.project-container {
 		width: 100vw;
 		height: 100vh;

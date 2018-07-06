@@ -41,3 +41,7 @@ document.getElementsByClassName("project-container-controls")[0].getElementsByTa
 	window.open(lnk, '_blank');
 }
 // Above this line - displayProject functionality -
+
+// Below this line - getContent functionality -
+var contactArray = [];
+// Above this line - getContent functionality -
