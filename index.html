@@ -11,176 +11,22 @@
 	<!-- ionicons below-->
 	<link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Cute+Font|Play" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<!-- Custom CSS below -->
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-320-max-width.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-320-min-width.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-375-min-width.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-425-min-width.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-768-min-width.css">
-	<link rel="stylesheet" type="text/css" href="styles/px-1024-min-width.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
-	<div class="outermost-container">
-		<div class="main-container">
-			<section class="content-container">
-				<div class="content-section"></div> <!-- empty content-section -->
-				<div class="content-section" id="aboutSection">
-					<section id="aboutContent">
-						<h1>Howdy!!!</h1>
-						<p>Warm greetings from Amit. Thanks a lot for stopping by his lovingly handcrafted site. This website is an expression of his digital side and an open ground for showcasing his acumen in various web technologies.</p>
-						<p>He is a JavaScript zealot and a JSON enthusiast. He cannot express enough how much he enjoys learning web technologies and languages like python, JavaScript, Sass, React, MySql, MongoDB, Git and others.</p>
-						<p>Coding is something he admires immensely. Solving coding challenges is his nice way of spending time. For him, in fact, scribbling codes is <span class="linker" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/Fill-With-Colors/main.html" onclick="displayProject(this.id)">more colorful</span> than most things. And when he is not busy coding, he is playing this <span class="linker" id="http://gameaboutsquares.com/" onclick="openLinkNewTab(this.id)">Game about Squares</span>.</p>
-						<p>Do check out his various <span class="linker" id="#skillsSection" onclick="openLink(this.id)">interests and skills</span> that he keeps polishing.</p>
-						<p>In case you feel like talking to him or if you have something to enquire about, please feel free to use this <span class="linker" onclick="getContent(contactArray)">contact form</span>.</p>
-					</section>
-				</div>
-				<div class="content-section" id="skillsSection">
-					<section>
-						<h1>Skills and Interests</h1>
-						<p>In addition to having a good understanding of web-related technologies, he is a quick learner with excellent analytical, written and verbal communication skills.</p>
-						<p>He is constantly learning new and newer technologies.</p>
-						<p>Have a look at his technology stack below. Want to build something useful? <span class="linker" onclick="getContent(contactArray)">Get in touch</span> with him.</p>
-						<p>
-							<img src="assets/logos/python.svg" title="Python">
-							<img src="assets/logos/JS_Unofficial.svg" title="JavaScript">
-							<img src="assets/logos/angular.svg" title="Angular">
-							<img src="assets/logos/react.svg" title="React">
-							<img src="assets/logos/D3.svg" title="D3">
-							<img src="assets/logos/bootstrap.svg" title="Bootstrap">
-							<img src="assets/logos/foundation.svg" title="Foundation">
-							<img src="assets/logos/sass.svg" title="Sass">
-							<img src="assets/logos/MySQL.svg" title="MySQL">
-							<img src="assets/logos/MongoDB.svg" title="MongoDB">
-						</p>
-					</section>
-				</div>
-				<div class="content-section" id="scribblesSection">
-					<section>
-						<h1>Scrawls n Scribbles</h1>
-						<p>It is often wise to keep scribbling. It keeps him updated and wanting to learn more. Below are some small projects that he created to keep himself busy.</p>
-						<h2>A select few JavaScript ones</h2>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/Two-Player-Tic-Tac-Toe/main.html" onclick="displayProject(this.id)">&#10085; Two Player Tic Tac Toe</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-Countdown-Timer/main.html" onclick="displayProject(this.id)">&#10085; A Countdown Timer</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-JS-Analog-Clock/main.html" onclick="displayProject(this.id)">&#10085; A JS Analog Clock</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/Simple-Smooth-Scroller/main.html" onclick="displayProject(this.id)">&#10085; Simple Smooth Scroller</p>
-						<h2>A select few CSS ones</h2>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/Three-Concentric-Arches/main.html" onclick="displayProject(this.id)">&#10085; Three Concentric Arches</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/A-Rotating-Pyramid/main.html" onclick="displayProject(this.id)">&#10085; A Rotating Pyramid</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/Youtube-Play-Pause-Button/main.html" onclick="displayProject(this.id)">&#10085; Youtube Play-Pause Button</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/Double-Helix/main.html" onclick="displayProject(this.id)">&#10085; Double Helix</p>
-						<h2>The freeCodeCamp ones</h2>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Simon-Game/" onclick="displayProject(this.id)">&#10085; Build a Simon Game</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Tic-Tac-Toe-Game/" onclick="displayProject(this.id)">&#10085; Build a Tic Tac Toe Game</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Pomodoro-Clock/" onclick="displayProject(this.id)">&#10085; Build a Pomodoro Clock</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-JavaScript-Calculator/" onclick="displayProject(this.id)">&#10085; Build a JavaScript Calculator</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Wikipedia-Viewer/" onclick="displayProject(this.id)">&#10085; Build a Wikipedia Viewer</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Random-Quote-Machine/" onclick="displayProject(this.id)">&#10085; Build a Random Quote Machine</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Personal-Portfolio-Webpage/" onclick="displayProject(this.id)">&#10085; Build a Personal Portfolio Webpage</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Build-a-Tribute-Page/" onclick="displayProject(this.id)">&#10085; Build a Tribute Page</p>
-						<h2>And the rest of all</h2>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/A-Rotating-Cube/main.html" onclick="displayProject(this.id)">&#10085; A Rotating Cube<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-Stopwatch-Timer/main.html" onclick="displayProject(this.id)">&#10085; A Stopwatch Timer<sup>(JS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-JS-Digital-Clock/main.html" onclick="displayProject(this.id)">&#10085; A JS Digital Clock<sup>(JS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/Night-Vision-Slider/main.html" onclick="displayProject(this.id)">&#10085; Night Vision Slider<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/Basic-Multiplication-Game/main.html" onclick="displayProject(this.id)">&#10085; Basic Multiplication Game<sup>(JS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-Surfer-Preloader/main.html" onclick="displayProject(this.id)">&#10085; A Surfer Preloader<sup>(JS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/A-Preloader-Animation/main.html" onclick="displayProject(this.id)">&#10085; A Preloader Animation<sup>(JS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/A-Location-Preloader/main.html" onclick="displayProject(this.id)">&#10085; A Location Preloader<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/A-Preloader-Animation/main.html" onclick="displayProject(this.id)">&#10085; A Bubble Preloader<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/A-Venice-Postcard/main.html" onclick="displayProject(this.id)">&#10085; A Venice Postcard<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/Three-Rotating-Squares/main.html" onclick="displayProject(this.id)">&#10085; Three Rotating Squares<sup>(CSS)</sup></p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/" onclick="displayProject(this.id)">See All of the JavaScript ones</p>
-						<p class="project" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/" onclick="displayProject(this.id)">See All of the CSS ones</p>
-					</section>
-				</div>
-				<div class="content-section" id="algorithmSection">
-					<section>
-						<h1>Algorithms</h1>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-confirm-the-ending-ac78f7cd4748" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Confirm the Ending</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-return-largest-numbers-in-arrays-39cf40e69858" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Return Largest Numbers in Arrays</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-title-case-a-sentence-d5f6877ce78c" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Title Case a Sentence</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-find-the-longest-word-in-a-string-b431580464e6" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Find the Longest Word in a String</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Check for Palindromes</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Factorialize a Number</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: Reverse a String</p>
-					</section>
-				</div>
-				<div class="content-section" id="postsSection">
-					<section>
-						<h1>Recent Posts</h1>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/a-review-of-a-course-by-the-stanford-life-design-lab-1cb610a5de49" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> A Review of a course by the Stanford Life Design Lab</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/tried-and-tested-searching-strategies-for-google-search-engine-f87e2e357c45" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> Tried and Tested Searching Strategies for Google Search Engine</p>
-						<p class="project" id="https://medium.com/@sarangiamitkumar/y-learn-to-code-ce0f222ee3c4" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> Y Learn to CODE</p>
-					</section>
-				</div>
-				<div class="content-section" id="contactSection">
-					<section>
-						<h1>Get In Touch</h1>
-						<p>Please use this contact form to send him a message. If not heavily engaged, he usually gets in touch very quickly.</p>
-						<form method="POST" action="https://formspree.io/amitsarangi44@gmail.com">
-							<input type="text" name="full_name" placeholder="What is your name?" size="40" required>
-							<input type="email" name="email_id" placeholder="What is your email id?" size="40" required>
-							<textarea name="find_me" placeholder="How did you find me?" rows="2" cols="35"></textarea>
-							<input type="url" name="website" placeholder="Where can I visit your webpage?" size="40">
-							<textarea name="message_subject" placeholder="Subject." rows="1" cols="35"></textarea>
-							<textarea name="message_body" placeholder="Your message." rows="4" cols="35"></textarea>
-							<button type="submit">Submit</button>
-						</form>
-					</section>
-				</div>
-			</section> <!-- content-container -->
-
-			<header class="header-container">
-				<nav class="navigation-panel">
-					<div class="navigation-section" id="#aboutSection" onclick="openLink(this.id)">
-						<div class="navigation-label">About</div>
-						<div class="navigation-icon"><i class="icon ion-person"></i></div>
-					</div>
-					<div class="navigation-section" id="#skillsSection" onclick="openLink(this.id)">
-						<div class="navigation-label">Skills</div>
-						<div class="navigation-icon"><i class="icon ion-settings"></i></div>
-					</div>
-					<div class="navigation-section" id="#scribblesSection" onclick="openLink(this.id)">
-						<div class="navigation-label">Scribbles</div>
-						<div class="navigation-icon"><i class="icon ion-merge"></i></div>
-					</div>
-					<div class="navigation-section" id="#algorithmSection" onclick="openLink(this.id)">
-						<div class="navigation-label">Algorithms</div>
-						<div class="navigation-icon"><i class="icon ion-code-working"></i></div>
-					</div>
-					<div class="navigation-section" id="#postsSection" onclick="openLink(this.id)">
-						<div class="navigation-label">Posts</div>
-						<div class="navigation-icon"><i class="icon ion-edit"></i></div>
-					</div>
-					<div class="navigation-section" id="#contactSection" onclick="openLink(this.id)">
-						<div class="navigation-label">Contact</div>
-						<div class="navigation-icon"><i class="icon ion-email"></i></div>
-					</div>
-				</nav>
-				<div class="navigation-toggler"><i class="icon ion-drag"></i></div>
-			</header> <!-- header-container -->
-
-			<footer class="footer-container">
-				<span class="footer-icon" id="resume/index.html" title="see resume" onclick="openLinkNewTab(this.id)">
-					<i class="icon ion-ios-paper"></i>
-				</span>
-				<span class="footer-icon" id="https://github.com/amitkumarsarangi" title="see github" onclick="openLinkNewTab(this.id)">
-					<i class="icon ion-social-github"></i>
-				</span>
-				<span class="footer-icon" id="https://www.linkedin.com/in/amitkumarsarangi/" title="see linkedin profile" onclick="openLinkNewTab(this.id)">
-					<i class="icon ion-social-linkedin"></i>
-				</span>
-				<span class="footer-icon">|</span>
-			</footer> <!-- footer-container -->
-			<div class="floating-container">
-				<main></main>
-				<div></div>
-			</div>
-		</div> <!-- main-container -->
-	</div> <!-- outermost-container -->
-
+	<main class="main-section" id="about">
+		<h1 class="section-heading-one">Howdy!!!</h1>
+		<p class="section-para">Warm greetings from Amit. Thanks a lot for stopping by his lovingly handcrafted site. This website is an expression of his digital side and an open ground for showcasing his acumen in various web technologies.</p>
+		<p class="section-para">He is a JavaScript zealot and a JSON enthusiast. He cannot express enough how much he enjoys learning web technologies and languages like python, JavaScript, Sass, React, MySql, MongoDB, Git and others.</p>
+		<p class="section-para">Coding is something he admires immensely. Solving coding challenges is his nice way of spending time. For him, in fact, scribbling codes is <span class="linker" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/Fill-With-Colors/main.html" onclick="displayProject(this.id)">more colorful</span> than most things. And when he is not busy coding, he is playing this <span class="linker" id="http://gameaboutsquares.com/" onclick="openLinkNewTab(this.id)">Game about Squares</span>.</p>
+	</main>
+	<section class="main-section" id="skills">
+		<h1 class="section-heading-one">Skills and Interests</h1>
+		<p class="section-para">In addition to having a good understanding of web-related technologies, he is a quick learner with excellent analytical, written and verbal communication skills.</p>
+		<p class="section-para">He is constantly learning new and newer technologies.</p>
+	</section>
 	<div class="project-container">
 		<iframe src=""></iframe>
 		<div class="project-container-controls">
@@ -188,10 +34,6 @@
 			<div title="open in new tab"><i class="icon ion-android-open"></i></div>
 		</div>
 	</div> <!-- project-container -->
-
-	<script type="text/javascript" src="scripts/main.js"></script>
-	<script type="text/javascript" src="scripts/navigation.js"></script>
-	<script type="text/javascript" src="scripts/project-display.js"></script>
-	<script type="text/javascript" src="scripts/content.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
 </body>
 </html>
