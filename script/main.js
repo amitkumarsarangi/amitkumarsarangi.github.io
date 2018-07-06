@@ -43,5 +43,18 @@ document.getElementsByClassName("project-container-controls")[0].getElementsByTa
 // Above this line - displayProject functionality -
 
 // Below this line - getContent functionality -
-var contactArray = [];
+var contactArray = [
+					'<form class="section-form" method="POST" action="https://formspree.io/amitsarangi44@gmail.com">'
+					,'<input type="text" name="full_name" placeholder="What is your name?" size="40" required>'
+					,'<input type="email" name="email_id" placeholder="What is your email id?" size="40" required>'
+					,'<textarea name="find_me" placeholder="How did you find me?" rows="2" cols="35"></textarea>'
+					,'<input type="url" name="website" placeholder="Where can I visit your webpage?" size="40">'
+					,'<textarea name="message_subject" placeholder="Subject." rows="1" cols="35"></textarea>'
+					,'<textarea name="message_body" placeholder="Your message." rows="3" cols="35"></textarea>'
+					,'<button type="submit">Submit</button>'
+					,'</form>'
+				];
+function getContent(arr) {
+	dropSound.play();
+}
 // Above this line - getContent functionality -

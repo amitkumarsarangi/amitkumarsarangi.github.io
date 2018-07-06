@@ -19,11 +19,128 @@ html, body {
 	font-family: 'Comfortaa', cursive;
 }
 
+.nav-container {
+	width: 100vw;
+	max-width: 1024px;
+	border-bottom: 5px solid rgb(250, 101, 102);
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.floating-container {
+	width: 90vw;
+	height: 70vh;
+	background-color: rgba(255, 232, 204, 0.95);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-top-right-radius: 10px;
+	box-shadow: 0 0 5px rgb(2, 20, 51);
+	opacity: 0;
+	display: none;
+}
+	.floating-container div {
+		width: 15px;
+		height: 15px;
+		background-color: rgb(255, 0, 0);
+		border-radius: 50%;
+		box-shadow: 0 0 2px 1px rgb(255, 0, 0);
+		position: fixed;
+		top: 3px;
+		right: 3px;
+		cursor: pointer;
+	}
+	.floating-container section {
+		margin: 3%;
+		width: 94%;
+		min-height: 10%;
+		background-color: green;
+		overflow: auto;
+	}
+
+.project-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	display: none;
+	-webkit-transition: all linear 0.9s;
+	-o-transition: all linear 0.9s;
+	transition: all linear 0.9s;
+}
+	.project-container iframe {
+		width: 100%;
+		height: 100%;
+	}
+	.project-container-controls {
+		background-color: rgb(250, 101, 102);
+		box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+		position: absolute;
+		top: 0;
+		right: 0;
+		animation-name: indicator-one;
+		animation-duration: 10s;
+		animation-delay: 5s;
+		animation-iteration-count: infinite;
+		-webkit-user-select: none; /* Chrome, Opera, Safari */
+		-moz-user-select: none; /* Firefox 2+ */
+		-ms-user-select: none; /* IE 10+ */
+		user-select: none;
+	}
+		@keyframes indicator-one {
+			0% {
+				background-color: rgb(250, 101, 102);
+				box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+			}
+			5% {
+				background-color: rgb(124, 51, 51);
+				box-shadow: -1px 1px 5px 1px rgb(124, 51, 51), -2px 2px 5px 1px rgb(189, 193, 201);
+			}
+			10% {
+				background-color: rgb(250, 101, 102);
+				box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+			}
+			100% {
+				background-color: rgb(250, 101, 102);
+				box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
+			}
+		}
+		.project-container-controls div {
+			margin: 5px;
+			font-size: 25px;
+			color: rgb(249, 249, 249);
+			text-shadow: 0 0 1px rgb(249, 249, 249);
+			cursor: pointer;
+			animation-name: indicator-two;
+			animation-duration: 10s;
+			animation-delay: 5s;
+			animation-iteration-count: infinite;
+		}
+			@keyframes indicator-two {
+				0% {
+					margin: 5px;
+				}
+				5% {
+					margin: 5px 15px 5px 5px;
+				}
+				10% {
+					margin: 5px;
+				}
+				100% {
+					margin: 5px;
+				}
+			}
+
 @media only screen and (max-width: 320px) {}
 
 @media only screen and (min-width: 320px) {
 	.main-section, .footer-section {
-		margin: 3.5em auto;
+		margin: 5.75em auto;
 		max-width: 300px;
 		padding: 1em 10px;
 		color: rgb(2, 20, 51);
@@ -31,6 +148,13 @@ html, body {
 		.section-heading-one {
 			margin: 0.35em 0;
 			font-size: 2.5em;
+			letter-spacing: 0.05em;
+			line-height: 1.4;
+			text-shadow: 0 0 0.04em rgba(2, 20, 51, 0.9);
+		}
+		.section-heading-two {
+			margin: 0.25em 0;
+			font-size: 1.75em;
 			letter-spacing: 0.05em;
 			line-height: 1.4;
 			text-shadow: 0 0 0.04em rgba(2, 20, 51, 0.9);
@@ -101,12 +225,28 @@ html, body {
 					box-shadow: 0 0 10px rgb(2, 20, 51);
 				}
 	.footer-section {
+		margin-top: 15.5em;
 		margin-bottom: 0;
 		height: 5em;
 		border-top: 1px solid rgb(250, 101, 102);
 		border-bottom: 5px solid rgb(250, 101, 102);
 		position: relative;
 	}
+		.image-section {
+			width: 9.40em;
+			border-radius: 30%;
+			background-color: rgb(159, 159, 157);
+			box-shadow: 0 0 7px 3px rgb(159, 159, 157);
+			position: absolute;
+			bottom: 1.25em;
+			left: 1.30em;
+			transform: rotateZ(-30deg);
+		}
+			.image-section img {
+				width: 100%;
+				border-radius: 30%;
+				display: block;
+			}
 		.icon-section {
 			position: absolute;
 			bottom: 0;
@@ -122,80 +262,6 @@ html, body {
 			.footer-icon:last-child {
 				cursor: none;
 			}
-	.project-container {
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		left: 0;
-		opacity: 0;
-		display: none;
-		-webkit-transition: all linear 0.9s;
-		-o-transition: all linear 0.9s;
-		transition: all linear 0.9s;
-	}
-		.project-container iframe {
-			width: 100%;
-			height: 100%;
-		}
-		.project-container-controls {
-			background-color: rgb(250, 101, 102);
-			box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
-			position: absolute;
-			top: 0;
-			right: 0;
-			animation-name: indicator-one;
-			animation-duration: 10s;
-			animation-delay: 5s;
-			animation-iteration-count: infinite;
-			-webkit-user-select: none; /* Chrome, Opera, Safari */
-			-moz-user-select: none; /* Firefox 2+ */
-			-ms-user-select: none; /* IE 10+ */
-			user-select: none;
-		}
-			@keyframes indicator-one {
-				0% {
-					background-color: rgb(250, 101, 102);
-					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
-				}
-				5% {
-					background-color: rgb(124, 51, 51);
-					box-shadow: -1px 1px 5px 1px rgb(124, 51, 51), -2px 2px 5px 1px rgb(189, 193, 201);
-				}
-				10% {
-					background-color: rgb(250, 101, 102);
-					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
-				}
-				100% {
-					background-color: rgb(250, 101, 102);
-					box-shadow: -1px 1px 5px 1px rgb(250, 101, 102), -2px 2px 5px 1px rgb(189, 193, 201);
-				}
-			}
-			.project-container-controls div {
-				margin: 5px;
-				font-size: 25px;
-				color: rgb(249, 249, 249);
-				text-shadow: 0 0 1px rgb(249, 249, 249);
-				cursor: pointer;
-				animation-name: indicator-two;
-				animation-duration: 10s;
-				animation-delay: 5s;
-				animation-iteration-count: infinite;
-			}
-				@keyframes indicator-two {
-					0% {
-						margin: 5px;
-					}
-					5% {
-						margin: 5px 15px 5px 5px;
-					}
-					10% {
-						margin: 5px;
-					}
-					100% {
-						margin: 5px;
-					}
-				}
 }
 
 @media only screen and (min-width: 375px) {
