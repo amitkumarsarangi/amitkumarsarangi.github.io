@@ -46,6 +46,60 @@ html, body {
 				color: rgb(28, 34, 206);
 				cursor: pointer;
 			}
+			.section-para img {
+				margin-top: 1em;
+				margin-right: 0.5em;
+				margin-bottom: 1em;
+				margin-left: 0.5em;
+				height: 1.8em;
+			}
+		.section-form {
+			padding: 1.75em 0;
+			width: 100%;
+		}
+			.section-form input, .section-form textarea, .section-form button {
+				margin: 0.75em 0;
+				width: 90%;
+				padding: 0.75em 5%;
+				font-size: 1.4em;
+				letter-spacing: 0.05em;
+				line-height: 1.7;
+				color: rgb(2, 20, 51);
+				text-shadow: 0 0 0.02em rgba(2, 20, 51, 0.9);
+				font-family: 'Comfortaa', cursive;
+				background-color: transparent;
+				border: 1px solid rgba(2, 20, 51, 0.07);
+				border-radius: 3em;
+			}
+				.section-form input::-webkit-input-placeholder, .section-form textarea::-webkit-input-placeholder {
+					color: rgba(2, 20, 51, 0.4);
+					text-shadow: 0 0 0.02em rgba(2, 20, 51, 0.4);
+				}
+				.section-form input::-moz-input-placeholder, .section-form textarea::-moz-input-placeholder {
+					color: rgba(2, 20, 51, 0.4);
+					text-shadow: 0 0 0.02em rgba(2, 20, 51, 0.4);
+				}
+				.section-form input::-ms-input-placeholder, .section-form textarea::-ms-input-placeholder {
+					color: rgba(2, 20, 51, 0.4);
+					text-shadow: 0 0 0.02em rgba(2, 20, 51, 0.4);
+				}
+				.section-form input:focus, .section-form textarea:focus {
+					box-shadow: 0 0 5px rgb(2, 20, 51);
+				}
+			.section-form button {
+				padding: 0.75em;
+				width: auto;
+				cursor: pointer;
+				display: block;
+				margin: 1.75em auto;
+				box-shadow: 0 0 5px rgb(2, 20, 51);
+				-webkit-transition: all ease 0.3s;
+				-o-transition: all ease 0.3s;
+				transition: all ease 0.3s;
+			}
+				.section-form button:hover {
+					box-shadow: 0 0 10px rgb(2, 20, 51);
+				}
 	.project-container {
 		width: 100vw;
 		height: 100vh;
