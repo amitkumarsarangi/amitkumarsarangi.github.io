@@ -43,8 +43,12 @@ document.getElementsByClassName("project-container-controls")[0].getElementsByTa
 // Above this line - displayProject functionality -
 
 // Below this line - getContent functionality -
+var floatingContainer = document.getElementsByClassName("floating-container")[0];
+var floatingContainerSection = floatingContainer.getElementsByTagName("section")[0];
+var floatingContainerDiv = floatingContainer.getElementsByTagName("div")[0];
 var contactArray = [
-					'<form class="section-form" method="POST" action="https://formspree.io/amitsarangi44@gmail.com">'
+					''
+					,'<form class="section-form" method="POST" action="https://formspree.io/amitsarangi44@gmail.com">'
 					,'<input type="text" name="full_name" placeholder="What is your name?" size="40" required>'
 					,'<input type="email" name="email_id" placeholder="What is your email id?" size="40" required>'
 					,'<textarea name="find_me" placeholder="How did you find me?" rows="2" cols="35"></textarea>'
@@ -54,7 +58,33 @@ var contactArray = [
 					,'<button type="submit">Submit</button>'
 					,'</form>'
 				];
+var freeCodeCampBasicAlgorithmScriptingSolutionsArray = [
+					''
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-confirm-the-ending-ac78f7cd4748" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Confirm the Ending</span></p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-return-largest-numbers-in-arrays-39cf40e69858" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Return Largest Numbers in Arrays</span></p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-title-case-a-sentence-d5f6877ce78c" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Title Case a Sentence</p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-find-the-longest-word-in-a-string-b431580464e6" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Find the Longest Word in a String</span></p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Check for Palindromes</span></p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Factorialize a Number</span></p>'
+					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Reverse a String</span></span></p>'
+				];
 function getContent(arr) {
+	var temp = "";
+	for(var i = 0; i < arr.length; i++) {
+		temp += arr[i];
+	}
+	floatingContainerSection.innerHTML = temp;
+	floatingContainer.style.display = "block";
+	setTimeout(function() {
+		floatingContainer.style.opacity = 1;
+	}, 500);
+	dropSound.play();
+}
+floatingContainerDiv.onclick = function() {
+	floatingContainer.style.opacity = 0;
+	setTimeout(function() {
+		floatingContainer.style.display = "none";
+	}, 500);
 	dropSound.play();
 }
 // Above this line - getContent functionality -

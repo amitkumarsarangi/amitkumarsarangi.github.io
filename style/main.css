@@ -30,35 +30,41 @@ html, body {
 }
 
 .floating-container {
-	width: 90vw;
-	height: 70vh;
+	width: 97vw;
+	max-width: 1024px;
+	height: 97vh;
 	background-color: rgba(255, 232, 204, 0.95);
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-top-right-radius: 10px;
-	box-shadow: 0 0 5px rgb(2, 20, 51);
+	box-shadow: 0 0 2px rgb(2, 20, 51);
+	overflow: hidden;
 	opacity: 0;
 	display: none;
+	transition: all 0.3s linear;
 }
 	.floating-container div {
 		width: 15px;
 		height: 15px;
-		background-color: rgb(255, 0, 0);
+		background-color: rgb(250, 101, 102);
 		border-radius: 50%;
-		box-shadow: 0 0 2px 1px rgb(255, 0, 0);
-		position: fixed;
-		top: 3px;
-		right: 3px;
+		box-shadow: 0 0 2px 1px rgb(250, 101, 102);
+		position: absolute;
+		top: 2px;
+		right: 2px;
 		cursor: pointer;
 	}
 	.floating-container section {
-		margin: 3%;
+		margin: 0 2%;
+		padding: 0 1%;
 		width: 94%;
-		min-height: 10%;
-		background-color: green;
+		max-height: 94%;
 		overflow: auto;
+		text-align: justify;
+		position: absolute;
+		bottom: 1%;
 	}
 
 .project-container {
@@ -171,11 +177,8 @@ html, body {
 				cursor: pointer;
 			}
 			.section-para img {
-				margin-top: 1em;
-				margin-right: 0.5em;
-				margin-bottom: 1em;
-				margin-left: 0.5em;
-				height: 1.8em;
+				margin: 1.35em 1.15em;
+				height: 2em;
 			}
 		.section-form {
 			padding: 1.75em 0;
