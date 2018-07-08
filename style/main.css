@@ -149,36 +149,12 @@ html, body {
 @media only screen and (max-width: 320px) {}
 
 @media only screen and (min-width: 320px) {
-	.navigation-section, .main-section, .footer-section {
+	.main-section, .footer-section, .navigation-section {
 		margin: auto;
 		padding: 1em 10px;
-		max-width: 300px;
+		max-width: 1024px;
 		/*background-color: rgba(250, 101, 102, 0.25);*/
 	}
-	.navigation-section {
-		margin-top: 5px;
-		border-radius: 7px;
-	}
-		.navigation-section ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-		}
-			.navigation-section ul li {
-				list-style: none;
-				display: inline-block;
-			}
-				.navigation-section ul li a {
-					font-size: 4.25em;
-					color: rgb(250, 101, 102);
-				}
-		.navigation-toggler {
-			font-size: 3.45em;
-			color: rgb(250, 101, 102);
-			position: fixed;
-			top: 11%;
-			right: 3%;
-		}
 	.main-section {
 		margin: 5.75em auto;
 		color: rgb(2, 20, 51);
@@ -264,7 +240,7 @@ html, body {
 		margin-bottom: 0;
 		height: 5em;
 		border-top: 2px solid rgb(250, 101, 102);
-		border-bottom: 5px solid rgb(255, 232, 204);
+		border-bottom: 55px solid rgb(255, 232, 204);
 		position: relative;
 	}
 		.image-section {
@@ -298,6 +274,35 @@ html, body {
 			.footer-icon:last-child {
 				cursor: none;
 			}
+	.navigation-section {
+		margin-top: 5px;
+		height: 33px;
+		background-color: rgb(250, 101, 102);
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+		.navigation-section ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+			.navigation-section ul li {
+				list-style: none;
+				display: inline-block;
+			}
+				.navigation-section ul li a {
+					font-size: 3.45em;
+					color: rgb(255, 232, 204);
+				}
+		.navigation-toggler {
+			font-size: 3.45em;
+			color: rgb(250, 101, 102);
+			position: fixed;
+			top: 11%;
+			right: 3%;
+		}
 }
 
 @media only screen and (min-width: 375px) {
