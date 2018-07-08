@@ -19,14 +19,11 @@ html, body {
 	font-family: 'Comfortaa', cursive;
 }
 
-.nav-container {
+.top-designer-bar {
 	width: 100vw;
-	max-width: 1024px;
 	border-bottom: 5px solid rgb(250, 101, 102);
 	position: fixed;
 	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
 }
 
 .floating-container {
@@ -43,6 +40,8 @@ html, body {
 	overflow: hidden;
 	opacity: 0;
 	display: none;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
 	.floating-container div {
@@ -66,6 +65,11 @@ html, body {
 		position: absolute;
 		bottom: 1%;
 	}
+
+.bottom-designer-bar {
+	width: 100vw;
+	border-bottom: 5px solid rgb(250, 101, 102);
+}
 
 .project-container {
 	width: 100vw;
@@ -145,10 +149,38 @@ html, body {
 @media only screen and (max-width: 320px) {}
 
 @media only screen and (min-width: 320px) {
-	.main-section, .footer-section {
-		margin: 5.75em auto;
-		max-width: 300px;
+	.navigation-section, .main-section, .footer-section {
+		margin: auto;
 		padding: 1em 10px;
+		max-width: 300px;
+		/*background-color: rgba(250, 101, 102, 0.25);*/
+	}
+	.navigation-section {
+		margin-top: 5px;
+		border-radius: 7px;
+	}
+		.navigation-section ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+			.navigation-section ul li {
+				list-style: none;
+				display: inline-block;
+			}
+				.navigation-section ul li a {
+					font-size: 4.25em;
+					color: rgb(250, 101, 102);
+				}
+		.navigation-toggler {
+			font-size: 3.45em;
+			color: rgb(250, 101, 102);
+			position: fixed;
+			top: 11%;
+			right: 3%;
+		}
+	.main-section {
+		margin: 5.75em auto;
 		color: rgb(2, 20, 51);
 	}
 		.section-heading-one {
@@ -231,8 +263,8 @@ html, body {
 		margin-top: 15.5em;
 		margin-bottom: 0;
 		height: 5em;
-		border-top: 1px solid rgb(250, 101, 102);
-		border-bottom: 5px solid rgb(250, 101, 102);
+		border-top: 2px solid rgb(250, 101, 102);
+		border-bottom: 5px solid rgb(255, 232, 204);
 		position: relative;
 	}
 		.image-section {
@@ -251,13 +283,14 @@ html, body {
 				display: block;
 			}
 		.icon-section {
+			width: 55%;
 			position: absolute;
 			bottom: 0;
 			right: 0;
 		}
 			.footer-icon {
 				margin-left: 0.25em;
-				font-size: 3.45em;
+				font-size: 3.25em;
 				color: rgb(250, 101, 102);
 				float: right;
 				cursor: pointer;

@@ -88,3 +88,11 @@ floatingContainerDiv.onclick = function() {
 	dropSound.play();
 }
 // Above this line - getContent functionality -
+
+// Below this line - navigation functionality -
+var navigationToggler = document.getElementsByClassName("navigation-toggler")[0];
+var navigationSection = document.getElementsByClassName("navigation-section")[0];
+navigationToggler.onclick = function() {
+	navigationSection.style.position = "fixed";
+}
+// Above this line - navigation functionality -
