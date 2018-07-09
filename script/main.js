@@ -93,6 +93,10 @@ floatingContainerDiv.onclick = function() {
 var navigationToggler = document.getElementsByClassName("navigation-toggler")[0];
 var navigationSection = document.getElementsByClassName("navigation-section")[0];
 navigationToggler.onclick = function() {
-	navigationSection.style.position = "fixed";
+	if(navigationSection.style.bottom === "0%") {
+		navigationSection.style.bottom = "-100%";
+	} else {
+		navigationSection.style.bottom = "0%";
+	}
 }
 // Above this line - navigation functionality -
