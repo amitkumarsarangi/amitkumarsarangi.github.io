@@ -46,18 +46,6 @@ document.getElementsByClassName("project-container-controls")[0].getElementsByTa
 var floatingContainer = document.getElementsByClassName("floating-container")[0];
 var floatingContainerSection = floatingContainer.getElementsByTagName("section")[0];
 var floatingContainerDiv = floatingContainer.getElementsByTagName("div")[0];
-var contactArray = [
-					''
-					,'<form class="section-form" method="POST" action="https://formspree.io/amitsarangi44@gmail.com">'
-					,'<input type="text" name="full_name" placeholder="What is your name?" size="40" required>'
-					,'<input type="email" name="email_id" placeholder="What is your email id?" size="40" required>'
-					,'<textarea name="find_me" placeholder="How did you find me?" rows="2" cols="35"></textarea>'
-					,'<input type="url" name="website" placeholder="Where can I visit your webpage?" size="40">'
-					,'<textarea name="message_subject" placeholder="Subject." rows="1" cols="35"></textarea>'
-					,'<textarea name="message_body" placeholder="Your message." rows="3" cols="35"></textarea>'
-					,'<button type="submit">Submit</button>'
-					,'</form>'
-				];
 var freeCodeCampBasicAlgorithmScriptingSolutionsArray = [
 					''
 					,'<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-confirm-the-ending-ac78f7cd4748" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Confirm the Ending</span></p>'
@@ -95,8 +83,10 @@ var navigationSection = document.getElementsByClassName("navigation-section")[0]
 navigationToggler.onclick = function() {
 	if(navigationSection.style.bottom === "0%") {
 		navigationSection.style.bottom = "-100%";
+		navigationToggler.style.transform = "rotateZ(0deg)";
 	} else {
 		navigationSection.style.bottom = "0%";
+		navigationToggler.style.transform = "rotateZ(540deg)";
 	}
 }
 // Above this line - navigation functionality -
