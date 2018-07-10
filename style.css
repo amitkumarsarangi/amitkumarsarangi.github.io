@@ -298,7 +298,7 @@ html, body {
 		padding: 1em 10px; /*do not change*/
 		max-width: 1004px; /*do not change*/
 
-		max-width: 405px;
+		max-width: 748px;
 		/*background-color: rgba(250, 101, 102, 0.1);*/
 	}
 	.main-section {
@@ -523,6 +523,28 @@ html, body {
 				}
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+		.section-heading-one {
+			font-size: 3.15em;
+		}
+		.section-heading-two {
+			font-size: 2.1em;
+		}
+		.section-para {
+			font-size: 1.55em;
+		}
+			.section-para img {
+				height: 2.45em;
+			}
+			.section-form input, .section-form textarea, .section-form button {
+				font-size: 1.55em;
+			}
+			.section-form button {
+				padding: 0.75em 2.45em;
+			}
+				.navigation-section ul li a {
+					font-size: 5.5em;
+				}
+}
 
 @media only screen and (min-width: 1024px) {}
