@@ -3,30 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Amit Kumar Sarangi - Website">
-	<meta name="keywords" content="HTML,CSS,JavaScript,Python,Developer,Programming,Coding,UX,UI">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Python,Developer,Programming,Coding">
 	<meta name="author" content="Amit Kumar Sarangi">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico?v=1.1" type="image/x-icon">
 	<title>Amit Kumar Sarangi | Portfolio</title>
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<!-- ionicons below-->
 	<link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- Custom Styles -->
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<!-- Custom CSS below -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<div class="navigation-toggle"><i class="icon ion-navicon-round"></i></div>
-		<nav class="navigation-section">
-			<div><i class="icon ion-person"></i> About</div>
-			<div><i class="icon ion-settings"></i> Skills</div>
-			<div><i class="icon ion-merge"></i> Scribbles</div>
-			<div><i class="icon ion-edit"></i> Posts</div>
-			<div><i class="icon ion-email"></i> Message</div>
-		</nav>
-	</header>
-
+	<div class="top-designer-bar" aria-hidden="true"></div>
 	<main class="main-section" id="about">
 		<h1 class="section-heading-one">Howdy!!!</h1>
 		<p class="section-para">Warm greetings from Amit. Thanks a lot for stopping by his lovingly handcrafted site. This website is an expression of his digital side and an open ground for showcasing his acumen in various web technologies.</p>
@@ -35,26 +25,24 @@
 		<p class="section-para">Do check out his various <span class="linker" id="#skills" onclick="openLink(this.id)">interests and skills</span> that he keeps polishing.</p>
 		<p class="section-para">In case you feel like talking to him or if you have something to enquire about, please feel free to use this <span class="linker" id="#contact" onclick="openLink(this.id)">contact form</span>.</p>
 	</main> <!-- #about -->
-
 	<section class="main-section" id="skills">
 		<h1 class="section-heading-one">Skills and Interests</h1>
 		<p class="section-para">In addition to having a good understanding of web-related technologies, he is a quick learner with excellent analytical, written and verbal communication skills.</p>
 		<p class="section-para">He is constantly learning new and newer technologies.</p>
 		<p class="section-para">Have a look at his technology stack below. Want to build something useful? <span class="linker" id="#contact" onclick="openLink(this.id)">Get in touch</span> with him.</p>
-		<p class="section-para img-para">
-			<img src="LOGOS/JS_Unofficial.svg" title="JavaScript">
-			<img src="LOGOS/angular.svg" title="Angular">
-			<img src="LOGOS/react.svg" title="React">
-			<!-- <img src="LOGOS/D3.svg" title="D3"> -->
-			<!-- <img src="LOGOS/bootstrap.svg" title="Bootstrap"> -->
-			<!-- <img src="LOGOS/foundation.svg" title="Foundation"> -->
-			<img src="LOGOS/sass.svg" title="Sass">
-			<img src="LOGOS/python.svg" title="Python">
-			<img src="LOGOS/MySQL.svg" title="MySQL">
-			<img src="LOGOS/MongoDB.svg" title="MongoDB">
+		<p class="section-para">
+			<img src="assets/logos/JS_Unofficial.svg" title="JavaScript">
+			<img src="assets/logos/angular.svg" title="Angular">
+			<img src="assets/logos/react.svg" title="React">
+			<!-- <img src="assets/logos/D3.svg" title="D3"> -->
+			<!-- <img src="assets/logos/bootstrap.svg" title="Bootstrap"> -->
+			<!-- <img src="assets/logos/foundation.svg" title="Foundation"> -->
+			<img src="assets/logos/sass.svg" title="Sass">
+			<img src="assets/logos/python.svg" title="Python">
+			<img src="assets/logos/MySQL.svg" title="MySQL">
+			<img src="assets/logos/MongoDB.svg" title="MongoDB">
 		</p>
 	</section> <!-- #skills -->
-
 	<section class="main-section" id="scribbles">
 		<h1 class="section-heading-one">Scrawls n Scribbles</h1>
 		<p class="section-para">It is good practice to keep scribbling. It keeps him updated and wanting to learn more. Below he has listed some small stuffs that he created to keep his fingers nimble.</p>
@@ -73,24 +61,22 @@
 		<p class="section-para" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-JS/" onclick="displayProject(this.id)">See All of the <span class="linker">JavaScript</span> ones</p>
 		<p class="section-para" id="https://amitkumarsarangi.github.io/Scrawls-n-Scribbles-CSS/" onclick="displayProject(this.id)">See All of the <span class="linker">CSS</span> ones</p>
 	</section> <!-- #scribbles -->
-
 	<section class="main-section" id="posts">
 		<h1 class="section-heading-one">Recent Posts</h1>
 		<p class="section-para" id="freeCodeCampBasicAlgorithmScriptingSolutions"><i class="icon ion-edit"></i> freeCodeCamp <span class="linker">Basic Algorithm Scripting</span> Solutions</p>
 		<div class="section-hidden-div" id="freeCodeCampBasicAlgorithmScriptingSolutionsArray">
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-confirm-the-ending-ac78f7cd4748" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Confirm the Ending</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-return-largest-numbers-in-arrays-39cf40e69858" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Return Largest Numbers in Arrays</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-title-case-a-sentence-d5f6877ce78c" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Title Case a Sentence</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-find-the-longest-word-in-a-string-b431580464e6" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Find the Longest Word in a String</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Check for Palindromes</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Factorialize a Number</span></p>
-			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> <span class="linker">Reverse a String</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-confirm-the-ending-ac78f7cd4748" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Confirm the Ending</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-return-largest-numbers-in-arrays-39cf40e69858" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Return Largest Numbers in Arrays</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-title-case-a-sentence-d5f6877ce78c" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Title Case a Sentence</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-find-the-longest-word-in-a-string-b431580464e6" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Find the Longest Word in a String</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-check-for-palindromes-c9032355d2c9" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Check for Palindromes</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-factorialize-a-number-50d1d66ab519" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Factorialize a Number</span></p>
+			<p class="section-para" id="https://medium.com/@sarangiamitkumar/freecodecamp-basic-algorithm-scripting-solutions-reverse-a-string-dafd3f21c172" onclick="openLinkNewTab(this.id)"><i class="icon ion-code-working"></i> freeCodeCamp Basic Algorithm Scripting Solutions: <span class="linker">Reverse a String</span></p>
 		</div>
 		<p class="section-para" id="https://medium.com/@sarangiamitkumar/a-review-of-a-course-by-the-stanford-life-design-lab-1cb610a5de49" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> <span class="linker">A Review of a course by the Stanford Life Design Lab</span></p>
 		<p class="section-para" id="https://medium.com/@sarangiamitkumar/tried-and-tested-searching-strategies-for-google-search-engine-f87e2e357c45" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> <span class="linker">Tried and Tested Searching Strategies for Google Search Engine</span></p>
 		<p class="section-para" id="https://medium.com/@sarangiamitkumar/y-learn-to-code-ce0f222ee3c4" onclick="openLinkNewTab(this.id)"><i class="icon ion-edit"></i> <span class="linker">Y Learn to CODE</span></p>
 	</section> <!-- #posts -->
-
 	<section class="main-section" id="contact">
 		<h1 class="section-heading-one">Get in Touch</h1>
 		<p class="section-para">Please use this contact form to send him a message. If not engaged, he usually gets in touch very quickly.</p>
@@ -104,7 +90,34 @@
 			<button type="submit">Submit</button>
 		</form>
 	</section> <!-- #contact -->
-
-	<script type="text/javascript" src="main.js"></script>
+	<footer class="footer-section">
+		<div class="image-section"><img src="assets/images/amit.png"></div>
+		<div class="icon-section">
+			<span class="footer-icon" id="#" title="see resume" onclick="openLinkNewTab(this.id)"><i class="icon ion-ios-paper"></i></span>
+			<!-- <span class="footer-icon" id="resume/index.html" title="see resume" onclick="openLinkNewTab(this.id)"><i class="icon ion-ios-paper"></i></span> -->
+			<span class="footer-icon" id="https://github.com/amitkumarsarangi" title="see github" onclick="openLinkNewTab(this.id)"><i class="icon ion-social-github"></i></span>
+			<span class="footer-icon" id="https://www.linkedin.com/in/amitkumarsarangi/" title="see linkedin profile" onclick="openLinkNewTab(this.id)"><i class="icon ion-social-linkedin"></i></span>
+			<span class="footer-icon">|</span>
+		</div>
+	</footer>
+	<div class="bottom-designer-bar" aria-hidden="true"></div>
+	<nav class="navigation-section">
+		<ul>
+			<li><a href="#about"><i class="icon ion-person"></i></a></li>
+			<li><a href="#skills"><i class="icon ion-settings"></i></a></li>
+			<li><a href="#scribbles"><i class="icon ion-merge"></i></a></li>
+			<li><a href="#posts"><i class="icon ion-edit"></i></a></li>
+			<li><a href="#contact"><i class="icon ion-email"></i></a></li>
+		</ul>
+		<div class="navigation-toggler"><i class="icon ion-arrow-up-b"></i></div>
+	</nav> <!-- navigation -->
+	<div class="project-container">
+		<iframe src=""></iframe>
+		<div class="project-container-controls">
+			<div title="close"><i class="icon ion-close-circled"></i></div>
+			<div title="open in new tab"><i class="icon ion-android-open"></i></div>
+		</div>
+	</div> <!-- project-container -->
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
