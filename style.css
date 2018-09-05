@@ -24,7 +24,7 @@ html, body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 15px;
 	letter-spacing: 1px;
-	line-height: 2;
+	line-height: 1.9;
 	text-shadow: 0 0 1px #dddddd;
 }
 
@@ -48,6 +48,21 @@ html, body {
 			.main-container p span.linker:hover {
 				padding: 4px 2px;
 			}
+
+.social-container {
+	position: fixed;
+	bottom: 10px;
+	left: 5vw;
+}
+	.social-icon {
+		margin-top: 2px;
+		font-size: 37px;
+		text-align: center;
+	}
+		.social-icon span {
+			color: rgb(250, 101, 102);
+			cursor: pointer;
+		}
 
 div.project-container {
 	width: 100vw;
