@@ -38,31 +38,27 @@ html, body {
 		padding-bottom: 20px;
 	}
 		.main-container p span.linker {
-			padding: 0 2px;
-			background-color: #fef1f1;
+			color: rgb(28, 34, 206);
 			cursor: pointer;
-			-webkit-transition: all linear 0.2s;
-			-o-transition: all linear 0.2s;
-			transition: all linear 0.2s;
+			-webkit-transition: all linear 0.15s;
+			-o-transition: all linear 0.15s;
+			transition: all linear 0.15s;
 		}
 			.main-container p span.linker:hover {
-				padding: 4px 2px;
+				color: rgb(250, 101, 102);
 			}
 
 .social-container {
 	position: fixed;
-	bottom: 10px;
-	left: 5vw;
+	bottom: 1vw;
+	left: 1vw;
 }
-	.social-icon {
+	.social {
 		margin-top: 2px;
-		font-size: 37px;
-		text-align: center;
+		font-size: 17px;
+		color: rgb(250, 101, 102);
+		cursor: pointer;
 	}
-		.social-icon span {
-			color: rgb(250, 101, 102);
-			cursor: pointer;
-		}
 
 div.project-container {
 	width: 100vw;

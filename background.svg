@@ -7,19 +7,15 @@
 
       .cls-2, .cls-3 {
         fill: none;
-      }
-
-      .cls-2 {
-        stroke: rgba(250,101,103,0.05);
-        stroke-width: 2px;
-      }
-
-      .cls-3 {
         stroke: #fff;
       }
 
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
       .cls-4 {
-        fill: #fff;
+        fill: #fafafa;
       }
     </style>
     <clipPath id="clip-background">
